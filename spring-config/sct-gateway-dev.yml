@@ -1,0 +1,21 @@
+zuul:
+  routes:
+    # 路由名称，随意
+    sct-auth:
+      # 路由地址
+      path: /api/auth/**
+      # 该路由地址对应的服务名称
+      serviceId: sct-auth
+    sct-admin:
+      path: /api/admin/**
+      serviceId: sct-admin-biz
+#    sct-monitor:
+#      path: /api/monitor/**
+#      serviceId: sct-monitor
+#    sct-zipkin:
+#      path: /api/zipkin/**
+#      serviceId: sct-zipkin
+#    sct-eureka:
+#      path: /api/eureka/**
+#      serviceId: sct-eureka
+
